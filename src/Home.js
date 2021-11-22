@@ -1,14 +1,14 @@
 // import logo from './logo.svg';
-import "./App.css";
+import "./Home.css";
 
 import React, {
   // useEffect,
 
   useState,
 } from "react";
+import Modal from "react-modal";
 
-import {orderedPizzas} from "./pizzasDB"
-
+// import {orderedPizzas} from "./pizzasDB"
 
 function Home() {
   const [pizza, setPizza] = useState([]);
@@ -93,7 +93,20 @@ function Home() {
 
   const [total, setTotal] = useState(10000);
 
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [labelModal, setLabelModal] = useState("PROCESANDO ORDEN");
+  function openModal() {
+    setIsOpen(true);
+  }
 
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    // subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   function handleAddIngredient(e) {
     // Encontrando la informacion de ingrediente a añadir
@@ -112,9 +125,6 @@ function Home() {
     setPizza((currentPizza) => [...currentPizza, addIngredient]);
   }
 
-
-
-
   function handleRemoveIngredient(e) {
     // Recuperando el valor del ingrediente a remover
     let removeIngredient = {
@@ -132,16 +142,61 @@ function Home() {
     ]);
   }
 
-  function handleSendOrder(){
-    console.log("sending order")
+  function handleSendOrder() {
+    console.log("sending order");
 
-    orderedPizzas.push(pizza)
-    console.log(pizza)
+    // ingredients.map((item)=>{
+    //   console.log(typeof(item.name))
+    // })
 
-    
+    // orderedPizzas.push(pizza)
+    console.log(pizza);
+    setIsOpen(true);
+
+    var finalPizza = {
+      base: {
+        tipo: "tradicional",
+      },
+      ingredients: pizza,
+    };
+
+    var delayInMilliseconds = 2000; //1 second
+
+    fetch("http://localhost:5000/pizzas", {
+      method: "post",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(finalPizza),
+    })
+      .then((res) => res.json())
+      .then(function (res) {
+        // alert("ORDEN ENVIADA");
+        console.log(res);
+        // Reset Pizza order
+        setPizza([]);
+
+        setTimeout(function () {
+          setIsOpen(false);
+        }, delayInMilliseconds);
+      });
+
     // console.log(orderedPizzas)
   }
 
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+    },
+  };
+
+  Modal.setAppElement("#modal_root");
 
   return (
     <div className="App">
@@ -177,11 +232,24 @@ function Home() {
         })}
       </div>
 
+      {/* <button onClick={openModal}>Open Modal</button> */}
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div className="loader"></div>
+        <h1>{labelModal}</h1>
+        {/* <button onClick={closeModal}>Cerrar</button> */}
+      </Modal>
+
       <div className="price-section">
-        <h1>Total $ {total}  <button onClick={handleSendOrder}>Pagar</button></h1>
-       
+        <h1>
+          Total $ {total} <button onClick={handleSendOrder}>Pagar</button>
+        </h1>
       </div>
-      
 
       <div className="next-section"></div>
     </div>

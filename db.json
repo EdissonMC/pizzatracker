@@ -1,3 +1,347 @@
 {
-    "pizzas":[]
+  "pizzas": [
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 6636
+        },
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 1366
+        },
+        {
+          "id": 1,
+          "name": "Aceitunas",
+          "price": 3000,
+          "id_ui": 7179
+        },
+        {
+          "id": 14,
+          "name": "Tomate",
+          "price": 3000,
+          "id_ui": 4193
+        },
+        {
+          "id": 13,
+          "name": "Res",
+          "price": 3000,
+          "id_ui": 7773
+        }
+      ],
+      "id": 1
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 4,
+          "name": "Cerdo",
+          "price": 3000,
+          "id_ui": 9809
+        },
+        {
+          "id": 5,
+          "name": "Champiñones",
+          "price": 3000,
+          "id_ui": 5391
+        }
+      ],
+      "id": 2
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 1714
+        },
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 5442
+        },
+        {
+          "id": 1,
+          "name": "Aceitunas",
+          "price": 3000,
+          "id_ui": 458
+        },
+        {
+          "id": 1,
+          "name": "Aceitunas",
+          "price": 3000,
+          "id_ui": 3078
+        }
+      ],
+      "id": 3
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 6,
+          "name": "Espinaca",
+          "price": 3000,
+          "id_ui": 6747
+        },
+        {
+          "id": 5,
+          "name": "Champiñones",
+          "price": 3000,
+          "id_ui": 1205
+        },
+        {
+          "id": 12,
+          "name": "Piña",
+          "price": 3000,
+          "id_ui": 4174
+        }
+      ],
+      "id": 4
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 6209
+        },
+        {
+          "id": 12,
+          "name": "Piña",
+          "price": 3000,
+          "id_ui": 3696
+        },
+        {
+          "id": 11,
+          "name": "Pollo",
+          "price": 5000,
+          "id_ui": 2899
+        }
+      ],
+      "id": 5
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [],
+      "id": 6
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 275
+        },
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 2988
+        },
+        {
+          "id": 11,
+          "name": "Pollo",
+          "price": 5000,
+          "id_ui": 1952
+        },
+        {
+          "id": 11,
+          "name": "Pollo",
+          "price": 5000,
+          "id_ui": 3247
+        }
+      ],
+      "id": 7
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 10,
+          "name": "Pimientos",
+          "price": 3000,
+          "id_ui": 4539
+        },
+        {
+          "id": 10,
+          "name": "Pimientos",
+          "price": 3000,
+          "id_ui": 6459
+        }
+      ],
+      "id": 8
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 9,
+          "name": "Pepperoni",
+          "price": 4500,
+          "id_ui": 996
+        },
+        {
+          "id": 9,
+          "name": "Pepperoni",
+          "price": 4500,
+          "id_ui": 7347
+        }
+      ],
+      "id": 9
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 6659
+        },
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 1901
+        },
+        {
+          "id": 2,
+          "name": "Aguacate",
+          "price": 3000,
+          "id_ui": 4952
+        }
+      ],
+      "id": 10
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 3848
+        },
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 9831
+        },
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 6276
+        },
+        {
+          "id": 3,
+          "name": "Cebolla",
+          "price": 3000,
+          "id_ui": 6025
+        }
+      ],
+      "id": 11
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 14,
+          "name": "Tomate",
+          "price": 3000,
+          "id_ui": 1166
+        },
+        {
+          "id": 14,
+          "name": "Tomate",
+          "price": 3000,
+          "id_ui": 9825
+        },
+        {
+          "id": 13,
+          "name": "Res",
+          "price": 3000,
+          "id_ui": 8298
+        },
+        {
+          "id": 13,
+          "name": "Res",
+          "price": 3000,
+          "id_ui": 7865
+        }
+      ],
+      "id": 12
+    },
+    {
+      "base": {
+        "tipo": "tradicional"
+      },
+      "ingredients": [
+        {
+          "id": 14,
+          "name": "Tomate",
+          "price": 3000,
+          "id_ui": 4617
+        },
+        {
+          "id": 15,
+          "name": "Ternera",
+          "price": 3000,
+          "id_ui": 8670
+        },
+        {
+          "id": 13,
+          "name": "Res",
+          "price": 3000,
+          "id_ui": 1256
+        },
+        {
+          "id": 12,
+          "name": "Piña",
+          "price": 3000,
+          "id_ui": 2814
+        }
+      ],
+      "id": 13
+    }
+  ]
 }
