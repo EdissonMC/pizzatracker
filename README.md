@@ -8,7 +8,7 @@ Instalar todas las dependencias del proyecto.
 
 
 ### Paso 2. `npm run server-api`
-Ejecutar este comando, el cual iniciara nuestra REST-api ficticia, la cual emulara nuestra REST-api en el servidor y  gestionara nuestra base de datos .
+Ejecutar este comando, el cual iniciara nuestra REST-api ficticia, emulando nuestro servidor y  gestionando la "base de datos" .
 
 ### Paso 3.  `npm start`
 
