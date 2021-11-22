@@ -232,17 +232,17 @@ function Home() {
         })}
       </div>
 
-      {/* <button onClick={openModal}>Open Modal</button> */}
+      
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        // contentLabel="Example Modal"
       >
         <div className="loader"></div>
         <h1>{labelModal}</h1>
-        {/* <button onClick={closeModal}>Cerrar</button> */}
+        
       </Modal>
 
       <div className="price-section">
